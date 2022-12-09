@@ -21,6 +21,11 @@ import End from "../../assets/images/end.png";
 import "./scss/index.scss";
 
 const index = () => {
+
+// const data=
+
+
+
   return (
     <>
       <main>
@@ -105,8 +110,8 @@ const index = () => {
                 <li className="gallery__wrap_ul--list">Kids</li>
               </ul>
               <span className="gallary__wrap_span">
-                <i class="bi bi-chevron-left"></i>
-                <i class="bi bi-chevron-right"></i>
+                <i className="bi bi-chevron-left"></i>
+                <i className="bi bi-chevron-right"></i>
               </span>
             </div>
             <div className="gallary__boots">
@@ -153,8 +158,8 @@ const index = () => {
                   <li className="anna__wrap_ul--list">
                     {" "}
                     <span className="gallary__wrap_span iconca">
-                      <i class="bi bi-chevron-left"></i>
-                      <i class="bi bi-chevron-right"></i>
+                      <i className="bi bi-chevron-left"></i>
+                      <i className="bi bi-chevron-right"></i>
                     </span>
                   </li>
                 </ul>
@@ -186,7 +191,11 @@ const index = () => {
                   odio elit.
                 </p>
                 <div className="end__wrap_div">
-                  <input className="end__wrap_div--input" type="text" placeholder="Enter your email address" />{" "}
+                  <input
+                    className="end__wrap_div--input"
+                    type="text"
+                    placeholder="Enter your email address"
+                  />{" "}
                   <button className="end__wrap_div--btn">Send</button>
                 </div>
               </div>

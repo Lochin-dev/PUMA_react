@@ -11,7 +11,7 @@ const index = (data) => {
           {data.title}
         </h3>
         <p className="intro__card_text">{data.text}</p>
-        <span className="intro__card_span">{data.span} <i class="bi bi-chevron-right"></i> </span>
+        <span className="intro__card_span">{data.span} <i className="bi bi-chevron-right"></i> </span>
       </div>
     </>
   );
