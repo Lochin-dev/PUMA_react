@@ -34,6 +34,18 @@
 }
 
 
+@media only screen and (max-width:780px) {
+
+   .video__wrap {
+      max-width: 367px;
+   }
+   .video__wrap_title {
+      font-size: 44px;
+      line-height: 45px;
+      padding: 0px 0;
+  }
+}
+
 
 
 @media only screen and (max-width:664px) {

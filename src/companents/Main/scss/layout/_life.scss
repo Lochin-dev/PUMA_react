@@ -36,6 +36,35 @@
 }
 
 
+@media only screen and (max-width:982px) {
+
+   .life__div_wrap--title {
+      width: 100%;
+      font-weight: 500;
+      font-size: 56px;
+      line-height: 76px;
+      color: #000000;
+   }
+   .life {
+      padding-top: 88px;
+  }
+}
+
+@media only screen and (max-width:770px) {
+
+   .life__div_wrap--title {
+      width: 100%;
+      font-weight: 500;
+      font-size: 46px;
+      line-height: 56px;
+      color: #000000;
+   }
+   .life {
+      padding-top: 10px;
+  }
+
+}
+
 
 
 @media only screen and (max-width:664px) {
