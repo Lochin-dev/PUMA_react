@@ -21,11 +21,59 @@ import End from "../../assets/images/end.png";
 import "./scss/index.scss";
 
 const index = () => {
+  const data = [
+    {
+      id: 1,
+      images:Card1 ,
+      title: "Quality",
+      span: "Read More",
+    },
+    {
+      id: 2,
+      images: Card2 ,
+      title: "Flexible",
+      span: "Read More",
+    },
+    {
+      id: 3,
+      images:  Card3 ,
+      title: "Long Lasting",
+      span: "Read More",
+    },
+  ];
 
-// const data=
+  const list = [
+    {
+      id: 1,
+      images:  Boots1 ,
+      title: "Puma RS-X Bold",
+      size: "Dubble-XL",
+      narxi: "$200", 
+    },
+    {
+      id: 2,
+      images:  Boots2 ,
+      title: "Puma Sneakers",
+      size: "Dubble-XL",
+      narxi: "$200",
+    },
+    {
+      id: 3,
+      images:  Boots3 ,
+      title: "Puma Ferrari",
+      size: "Dubble-XL",
+      narxi: "$200",
+    },
+    {
+      id: 4,
+      images:  Boots4 ,
+      title: "Puma Running",
+      size: "Dubble-XL",
+      narxi: "$200",
+    },
+  ];
 
-
-
+  // console.log(list);
   return (
     <>
       <main>
@@ -73,24 +121,9 @@ const index = () => {
             <span className="intro__span">Feature</span>
             <h1 className="intro__title">We have best feature in Shoes</h1>
             <div className="intro__wrap">
-              <Card
-                images={Card1}
-                title="Quality"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat mauris nisl est accumsan quis tempus."
-                span="Read More"
-              />
-              <Card
-                images={Card2}
-                title="Flexible"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat mauris nisl est accumsan quis tempus."
-                span="Read More"
-              />
-              <Card
-                images={Card3}
-                title="Long Lasting"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat mauris nisl est accumsan quis tempus."
-                span="Read More"
-              />
+              { data.map((el) => {
+                return <Card user={el} key={el.id} />;
+              })}
             </div>
           </div>
         </section>
@@ -115,30 +148,9 @@ const index = () => {
               </span>
             </div>
             <div className="gallary__boots">
-              <List
-                images={Boots1}
-                title="Puma RS-X Bold"
-                size="Dubble-XL"
-                narxi="$200"
-              />
-              <List
-                images={Boots2}
-                title="Puma Sneakers"
-                size="Dubble-XL"
-                narxi="$200"
-              />
-              <List
-                images={Boots3}
-                title="Puma Ferrari"
-                size="Dubble-XL"
-                narxi="$200"
-              />
-              <List
-                images={Boots4}
-                title="Puma Running"
-                size="Dubble-XL"
-                narxi="$200"
-              />
+              {list.map((el) => {
+                return <List data={el} key={el.id} />;
+              })}
             </div>
           </div>
         </section>
