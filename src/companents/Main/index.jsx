@@ -64,7 +64,7 @@ const index = () => {
       size: "Dubble-XL",
       narxi: "$200",
     },
-    {
+    { 
       id: 4,
       images:  Boots4 ,
       title: "Puma Running",
